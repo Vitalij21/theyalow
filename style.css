@@ -1,0 +1,349 @@
+@import url("css/normalize.css");
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix::after,
+.header::after,
+.grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html {
+	font-size: 100%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #000;
+	font-size: 1rem;
+	line-height: 1.375;
+	margin: 0;
+}
+
+.ppage__row {
+	background: url(images/sun2.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.page__cell {
+	/*ok*/
+	max-width: 1020px;
+	margin: 0 auto;	
+	border: 1px solid blueviolet;
+}
+/**/
+
+.advantage {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	align-items: flex-end;
+	margin: 37px 0 37px 0;
+
+}
+.advantage__item {
+	width: 28%;
+	text-align: center;
+	margin-right: 8%;	
+}
+.advantage__item a{
+	text-decoration: none;
+	color: #000;
+	font-weight: normal;
+}
+
+.advantage__item a:hover{
+	text-decoration: underline;
+	color: gray;	
+}
+
+.grid__item:nth-of-type(2n),
+.advantage__item:last-child {
+	margin-right: 0;
+}
+.advantage__headline {
+	font-size: 1.25rem;
+	margin: 0;
+}
+.advantage__icon {
+	margin-bottom: 1.2rem;
+}
+.grid__text {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 91px;
+	height: 95px;
+}
+
+.icon__bd {
+	width: 109px;
+	height: 74px;
+	/*margin-bottom: 20px;*/
+}
+.icon__c {
+	width: 91px;
+	height: 95px;	
+px}
+.icon__if {
+	width: 81px;
+	height: 83px;
+}
+
+/*******/
+
+.page__row--twt {
+	background-image: url("./images/bg_twt.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; /*чтобы изображение растягивалось пропорционально по всему экрану*/
+	height: 31.75rem;
+    color: white; 
+    text-align: center; 
+    width: 100%;
+	margin: 0;	
+}
+
+.headline-twt {
+	padding-top: 20px;
+
+}
+
+
+/*******/
+.headline {	
+	font: Myriad Pro, sans-serif;
+	font-size: 2.316rem;
+	font-weight: 400;
+}
+
+.headline_twt {
+	text-align: left;	
+}
+.section__mnk-twt {
+	max-width: 1020px;
+	margin: 0 auto;
+	height: 233px;
+	border: 1px solid green;
+}
+
+.mnk-twt {
+	width: 41rem;
+	height: 233px;	
+	border: 1px solid red;
+	float: left;
+}
+.info {
+	max-width: 21.2rem;
+	font-size: 1.816rem;
+	height: 100%;	
+	border: 1px solid pink;
+	float: left;
+	background: #ec9e03;	
+}
+.mnk {
+	width: 19.625rem;
+	height: 100%;	
+	border: 1px solid blue;
+	float: left;
+}
+.twt {
+	width: 20.5rem;
+	height: 100%;	
+	border: 1px solid black;
+	float: right;
+	background-color: #ec9e03;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.date-calendar {
+	width: 100%;
+	height: 5.375rem;
+	border: 1px solid red;	
+}
+.date {
+	width: 7.0625rem;
+	height: 100%;
+	border: 1px solid red;
+	background: #ddb101;
+}
+.date-number {
+	font: Segoe UI, sans-serif;
+	font-weight: bold;
+	font-size: 3.19rem;
+}
+.date-mounth {
+	font: Segoe UI, sans-serif;
+	font-weight: 400;
+	font-size: 1.316rem;
+}
+
+
+.page__row--devices {
+	background-image: url("./images/bg_devices.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; /*чтобы изображение растягивалось пропорционально по всему экрану*/
+	height: 31.0625rem;
+    color: white; 
+    text-align: center; 
+    width: 100%;
+	margin: 0;
+}
+
+.headline_devices {
+	text-align: center;
+}
+.devices {
+	display: flex;
+	float: left;
+	width: 36rem;
+	border: 1px solid brown;
+	justify-content: space-around;
+}
+
+.devices-item {
+	justify-content: space-around;
+	float: left;	
+}
+.mmonitor {
+	width: 322px;
+	height: 254px;
+}
+.adventages-devices {
+	width: 100%;
+	border: 1px solid yellowgreen;
+	text-align: left;	
+}
+
+
+.adventages-devices li {
+	list-style-type: none; /* Убираем маркеры */
+}
+
+.adventages-devices ul {
+	margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+
+
+.page__row--footer {
+	background-color: #4c4c4c;
+	margin: 0;
+	z-index: -1;
+}
+
+.logo {	
+	height: 4rem;
+	width: 225px;
+	border: 1px solid brown;
+	flex: left;
+
+}
+.logo img {
+	float: left;
+	width: 3.375rem;
+	height: 3.375rem;
+	margin-top: 0.3125rem;
+	
+}  
+.logo h1 {
+	margin: 0 auto;
+	position: relative;
+	left: 0.5625rem;
+	top: 9px;
+	color: #fff;
+	font: lucida, sans-serif;
+	font-weight: 1.816rem;
+	font-style: italic;
+	margin-top: 0;	
+}
+.logo-up {
+	position: relative;	
+}
+.logo_down {
+	position: absolute;
+}
+
+.page__row--header {
+	background-image: url("./images/header_0.png");
+	background-image: url("./images/header-1.png");
+	background-image: url("./images/header_2.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; /*чтобы изображение растягивалось пропорционально по всему экрану*/
+	height: 35.3125rem;
+    color: white; 
+    text-align: center; 
+    width: 100%;
+	margin: 0;
+}
+
+
+header {
+	display: inline-flex;
+	justify-content: space-between;
+
+}
+.navigation {
+	width: 453px;
+	height: 41px;
+	flex: right;
+	background-color: #f5c506;
+	border: 1px solid green;
+}
+.nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+.media {
+	height: 20.4375rem;
+	border: 1px sold green;
+	position: relative;
+}
+.video {
+	width: 34.3125rem;
+	height: 20.4375rem;
+	border: 1px solid gray;
+	float: left;
+}
+.text {
+	float: right;
+	font-family: Myriad Pro, sans-serif;
+	font-size: 3.94rem;
+	font-weight: normal;
+	color: #f5c506;
+	text-align: center;
+	border: 1px solid red;	
+	width: 29.3125rem;
+	position: absolute;
+	top: 76.5px;
+	left: 549px;
+}
+.text p{
+	margin: 0;
+}
+
+.text span {	
+	color: #fff;
+}
